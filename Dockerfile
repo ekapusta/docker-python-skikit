@@ -8,7 +8,7 @@ RUN ["pip", "install", "scipy"]
 RUN ["pip", "install", "MySQL-python"]
 
 VOLUME ["/code"]
-WORKDIR ["/code"]
+WORKDIR /code
 
 ENTRYPOINT ["python"]
 CMD ["app.py"]
