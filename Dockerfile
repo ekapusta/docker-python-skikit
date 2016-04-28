@@ -7,8 +7,11 @@ RUN ["pip", "install", "sklearn"]
 RUN ["pip", "install", "scipy"]
 RUN ["pip", "install", "MySQL-python"]
 
-VOLUME ["/code"]
+RUN apt-get update && apt-get install -y \
+    supervisor \
+ && rm -rf /var/lib/apt/lists/*
+
+VOLUME ["/code", "/etc/supervisor/conf.d/"]
 WORKDIR /code
 
-ENTRYPOINT ["python"]
-CMD ["app.py"]
+CMD ["/usr/bin/supervisord"]
