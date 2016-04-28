@@ -5,6 +5,7 @@ RUN ["pip", "install", "Flask"]
 RUN ["pip", "install", "pandas"]
 RUN ["pip", "install", "sklearn"]
 RUN ["pip", "install", "scipy"]
+RUN ["pip", "install", "matplotlib"]
 RUN ["pip", "install", "MySQL-python"]
 
 RUN apt-get update && apt-get install -y \
