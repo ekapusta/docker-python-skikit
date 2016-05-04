@@ -7,6 +7,7 @@ RUN ["pip", "install", "sklearn"]
 RUN ["pip", "install", "scipy"]
 RUN ["pip", "install", "matplotlib"]
 RUN ["pip", "install", "MySQL-python"]
+RUN ["pip", "install", "PyYAML"]
 
 RUN apt-get update && apt-get install -y \
     supervisor \
