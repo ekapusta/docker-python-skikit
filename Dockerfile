@@ -8,6 +8,7 @@ RUN ["pip", "install", "scipy"]
 RUN ["pip", "install", "matplotlib"]
 RUN ["pip", "install", "MySQL-python"]
 RUN ["pip", "install", "PyYAML"]
+RUN ["pip", "install", "xgboost"]
 
 VOLUME ["/code"]
 WORKDIR /code
