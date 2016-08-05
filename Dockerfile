@@ -9,11 +9,9 @@ RUN ["pip", "install", "matplotlib"]
 RUN ["pip", "install", "MySQL-python"]
 RUN ["pip", "install", "PyYAML"]
 
-RUN apt-get update && apt-get install -y \
-    supervisor \
- && rm -rf /var/lib/apt/lists/*
-
-VOLUME ["/code", "/etc/supervisor/conf.d/"]
+VOLUME ["/code"]
 WORKDIR /code
 
-CMD ["/usr/bin/supervisord"]
+ENTRYPOINT ["python"]
+CMD ["app.py"]
+
