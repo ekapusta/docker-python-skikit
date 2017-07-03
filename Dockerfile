@@ -14,6 +14,7 @@ RUN ["pip", "install", "matplotlib"]
 RUN ["pip", "install", "mysqlclient"]
 RUN ["pip", "install", "PyYAML"]
 RUN ["pip", "install", "xgboost"]
+RUN ["pip", "install", "lightgbm"]
 RUN ["pip", "install", "gunicorn"]
 RUN ["pip", "install", "newrelic"]
 
