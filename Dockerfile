@@ -15,6 +15,7 @@ RUN ["pip", "install", "MySQL-python"]
 RUN ["pip", "install", "PyYAML"]
 RUN ["pip", "install", "xgboost"]
 RUN ["pip", "install", "gunicorn"]
+RUN ["pip", "install", "newrelic"]
 
 VOLUME ["/code"]
 WORKDIR /code
