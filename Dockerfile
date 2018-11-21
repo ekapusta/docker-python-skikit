@@ -17,6 +17,7 @@ RUN ["pip", "install", "xgboost"]
 RUN ["pip", "install", "lightgbm"]
 RUN ["pip", "install", "gunicorn"]
 RUN ["pip", "install", "newrelic"]
+RUN ["pip", "install", "catboost"]
 
 VOLUME ["/code"]
 WORKDIR /code
