@@ -18,6 +18,7 @@ RUN ["pip", "install", "lightgbm"]
 RUN ["pip", "install", "gunicorn"]
 RUN ["pip", "install", "newrelic"]
 RUN ["pip", "install", "catboost"]
+RUN ["pip", "install", "mysql-connector"]
 
 VOLUME ["/code"]
 WORKDIR /code
